@@ -16,3 +16,7 @@ For one simulated dataset:
 * Randomize 96 patients to the 12 possible crossover patterns. The treatment patterns and corresponding data will be totally deterministic in this case.
 * Generate individual-specific random effects for the 96 individuals.
 * Based on the treatment data, individual-specific random effects and the GLMM model above, estimate the individual- and period-specific probability of outcome $E(Y_{ij})=P(Y_{ij}=1)$ and use these to determine the outcome $Y_{ij}$ (0 or 1) based on a Bernoulli distribution.
+* Fit the logistic random effects model to the simulated data.
+
+Do this $R$ times. 
+* Save treatment estimates, p-values, and estimated random effect variance to assess bias, power, and ICC, respectively. 
