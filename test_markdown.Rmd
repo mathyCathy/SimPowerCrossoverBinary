@@ -1,6 +1,8 @@
 ---
 title: "Test Rmarkdown"
-output: html_document
+output: 
+  html_document:
+    keep_md: true
 date: "2024-08-31"
 ---
 
