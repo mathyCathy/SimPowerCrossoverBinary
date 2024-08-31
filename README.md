@@ -3,3 +3,5 @@ Simulation-based power calculations for a cross-over trial with a dichotomous ou
 
 <!-- ABOUT THE PROJECT -->
 ## Underlying assumptions and math
+
+* logit($Y_{ij}$)
