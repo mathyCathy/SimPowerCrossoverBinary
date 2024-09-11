@@ -27,6 +27,13 @@ randomSeqTab = data.frame(sequence_no = 1:12,
                           period4 = c("LC", "RC", "LC", "V", "RC", "V", "LC", "V", "V", "RC", "V", "V")
 )
 
+# First considering a 3X3 cross over type design
+# 8 X each randomization sequence = 96 individuals
+assignmentList = rep(seq(1:12), 8)
+
+# Randomization list
+set.seed(1)
+randomList = sample(assignmentList, length(assignmentList), replace = FALSE)
 
 # Getting b0 and b1 based on estimated outcome prevalences
 p_ref = 0.20 # 20% conversion in carotid
